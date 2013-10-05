@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Deploy en varios servers Tomcat" default="deployServer">
+	
+	<taskdef name="deploy" classname="org.apache.catalina.ant.DeployTask"/>	                        
+    
+    <target name="deployServer" depends="deployServer1, deployServer2"/>
+    
+    <target name="deployServer1" if="tomcat.servidor1">
+    	
+    	
+    	<deploy url="http://${tomcat.servidor1}/manager/text" 
+    			username="${tomcat.usuario}" 
+    			password="${tomcat.contrasena}"
+                path="/${project.build.finalName}" 
+                war="file:${project.build.directory}/${project.build.finalName}.${project.packaging}" update="true"/>
+      </target>
+    
+     <target name="deployServer2" if="tomcat.servidor2">
+    	<deploy url="http://${tomcat.servidor1}/manager/text" 
+    			username="${tomcat.usuario}" 
+    			password="${tomcat.contrasena}"
+                path="/${project.build.finalName}" 
+                war="file:${project.build.directory}/${project.build.finalName}.${project.packaging}" update="true"/>                    
+      </target>
+    
+	
+</project>
