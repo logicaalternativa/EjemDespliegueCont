@@ -5,7 +5,7 @@
   <artifactId>EjemDespliegueCont</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>EjemDespliegueCont Maven Webapp</name>
+  <name>EjemDespliegueCont Ejemplo de despliegue continuo Maven Webapp</name>
   <url>http://www.logicaalternativa.com</url> 
   <properties>
        <java.version>1.7</java.version>
