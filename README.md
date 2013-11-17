@@ -3,7 +3,7 @@
 Ejemplo de proyecto para utilizar herramientas estandar del mundo java
 como maven, junit, selenium y jenkins para poder realizar un ciclo de vida basado en **desarrollo continuo**
 
-Esto se explica y se desarrolla en la siguiente [entrada] (http://www.logicaalternativa.com/?p=489 de 
+Esto se explica y se desarrolla en la siguiente [entrada] (http://www.logicaalternativa.com/?p=489) de 
 **[LogicaAlternativa.com] (http://www.logicaalternativa.com)**
 
 Clases
