@@ -5,8 +5,7 @@
     
     <target name="deployServer" depends="deployServer1, deployServer2"/>
     
-    <target name="deployServer1" if="tomcat.servidor1">
-    	
+    <target name="deployServer1" if="tomcat.servidor1">    	
     	
     	<deploy url="http://${tomcat.servidor1}/manager/text" 
     			username="${tomcat.usuario}" 
